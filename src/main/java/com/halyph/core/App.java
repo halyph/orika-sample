@@ -1,5 +1,5 @@
 package com.halyph.core;
- 
+
 import com.halyph.config.MyCustomMapper;
 import com.halyph.entity.Name;
 import com.halyph.entity.Person;
@@ -14,12 +14,12 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class App {
-	public static void main(String[] args) {
-	    
-		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-	    HelloWorld obj = (HelloWorld) context.getBean("helloBean");
-	    
-	    obj.printHelloWorld("Spring3 Java Config");
+    public static void main(String[] args) {
+
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        HelloWorld obj = (HelloWorld) context.getBean("helloBean");
+
+        obj.printHelloWorld("Spring3 Java Config");
 
         Name name1 = new Name("FirstName", "SecondName");
         Name name2 = new Name("Jet", "Lee");

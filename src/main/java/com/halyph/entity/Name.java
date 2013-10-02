@@ -8,9 +8,11 @@ public class Name {
         this.first = first;
         this.last = last;
     }
+
     public String getFirst() {
         return first;
     }
+
     public String getLast() {
         return last;
     }

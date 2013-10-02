@@ -12,24 +12,31 @@ public class PersonDto {
     public String getFirstName() {
         return firstName;
     }
+
     public String getLastName() {
         return lastName;
     }
+
     public Date getDate() {
         return date;
     }
+
     public String[] getAliases() {
         return aliases;
     }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
     public void setDate(Date date) {
         this.date = date;
     }
+
     public void setAliases(String[] aliases) {
         this.aliases = aliases;
     }

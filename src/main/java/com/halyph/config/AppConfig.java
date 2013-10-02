@@ -8,8 +8,8 @@ import com.halyph.hello.impl.HelloWorldImpl;
 
 @Configuration
 public class AppConfig {
-	
-	@Bean(name="helloBean")
+
+    @Bean(name = "helloBean")
     public HelloWorld helloWorld() {
         return new HelloWorldImpl();
     }
