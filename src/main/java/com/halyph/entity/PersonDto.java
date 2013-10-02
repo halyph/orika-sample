@@ -7,7 +7,7 @@ public class PersonDto {
     private String firstName;
     private String lastName;
     private Date date;
-    private String[] aliases;
+    private String[] aliases = new String[2];
 
     public String getFirstName() {
         return firstName;

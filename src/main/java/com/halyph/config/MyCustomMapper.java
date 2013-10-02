@@ -11,8 +11,8 @@ public class MyCustomMapper extends ConfigurableMapper {
                 .field("name.first", "firstName")
                 .field("name.last", "lastName")
                 .field("birthDate", "date")
-//                .field("alias.first", "aliases[0]")
-//                .field("alias.last", "aliases[1]")
+                .field("alias.first", "aliases[0]")
+                .field("alias.last", "aliases[1]")
                 .byDefault()
                 .register();
     }
