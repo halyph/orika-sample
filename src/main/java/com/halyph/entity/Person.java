@@ -26,6 +26,18 @@ public class Person {
         return (Date) birthDate.clone();
     }
 
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public void setAlias(Name alias) {
+        this.alias = alias;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
     @Override
     public String toString() {
         return "Person{" +

@@ -5,7 +5,7 @@ import com.halyph.entity.Name;
 import com.halyph.entity.NameDto;
 import com.halyph.entity.Person;
 import com.halyph.entity.PersonDto;
-import ma.glasnost.orika.MapperFacade;
+import com.halyph.mapper.Mapper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -21,7 +21,7 @@ public class App {
         Person person = new Person(name1, new Date(), name2);
 
         System.out.println(person);
-        MapperFacade mapper = context.getBean("mapper", MapperFacade.class);
+        Mapper mapper = context.getBean("orika", Mapper.class);
 
         PersonDto personDto = mapper.map(person, PersonDto.class);
         System.out.println(personDto);

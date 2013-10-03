@@ -9,6 +9,9 @@ public class PersonDto {
     private Date date;
     private String[] aliases = new String[2];
 
+    public PersonDto() {
+    }
+
     public String getFirstName() {
         return firstName;
     }

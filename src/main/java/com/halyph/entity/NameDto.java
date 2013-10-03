@@ -4,6 +4,9 @@ public class NameDto {
     private String first;
     private String last;
 
+    public NameDto() {
+    }
+
     public NameDto(String first, String last) {
         this.first = first;
         this.last = last;
@@ -15,6 +18,14 @@ public class NameDto {
 
     public String getLast() {
         return last;
+    }
+
+    public void setFirst(String first) {
+        this.first = first;
+    }
+
+    public void setLast(String last) {
+        this.last = last;
     }
 
     @Override
